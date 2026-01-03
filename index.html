@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Portfolio showcasing projects and skills">
+    <title>Saaketh Manepalli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons, relying on CSS if this fails or using SVG -->
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">Saaketh Manepalli</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#hackathons">Hackathons</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Welcome</span>
+            <h1 class="fade-in">wasted hours here: <span class="gradient-text">Experiences</span></h1>
+            <p class="fade-in-delay">I build (and destroy) things.</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#experience" class="btn-primary">View Work</a>
+                <a href="https://linkedin.com" target="_blank" class="btn-secondary">LinkedIn</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </header>
+
+    <section id="experience" class="section-container">
+        <h2 class="section-title">Coding Experience</h2>
+        <div class="timeline">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                    <h3>Senior Frontend Developer</h3>
+                    <h4>Tech Corp Inc.</h4>
+                    <p>Leading the frontend team in building scalable React applications. Improved site performance by
+                        40%.</p>
+                </div>
+            </div>
+            <!-- Experience Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Full Stack Developer</h3>
+                    <h4>StartupX</h4>
+                    <p>Developed full-stack features using Next.js and Node.js. Integrated payment gateways and
+                        real-time chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hackathons" class="section-container">
+        <h2 class="section-title">Hackathons</h2>
+        <div class="projects-grid">
+            <!-- Hoya Hacks -->
+            <article class="project-card" onclick="openModal('hoya')">
+                <div class="card-image">
+                    <img src="assets/Georgetown-University_logo.png" alt="Georgetown University" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>PomEEGo @ Hoya Hacks</h3>
+                    <p>3rd Place Overall. EEG-based monitoring system for physician burnout.</p>
+                    <div class="tags">
+                        <span>Flutter</span>
+                        <span>EEG Hardware</span>
+                        <span>Java EE</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- BitCamp -->
+            <article class="project-card" onclick="openModal('bitcamp')">
+                <div class="card-image">
+                    <img src="assets/UMD.png" alt="University of Maryland" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>ParseDoD @ BitCamp</h3>
+                    <p>Government contract analysis tool using GPT-3.5 and automated scraping.</p>
+                    <div class="tags">
+                        <span>Java EE</span>
+                        <span>NLP</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TCNJ Hackathon -->
+            <article class="project-card" onclick="openModal('tcnj')">
+                <div class="card-image">
+                    <img src="assets/tcnjlogo.jpeg" alt="The College of New Jersey" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>AI Diet Tracker @ HackTCNJ</h3>
+                    <p>Best Freshman Project. AI-powered nutrition monitoring device.</p>
+                    <div class="tags">
+                        <span>GPT-4</span>
+                        <span>Auth0</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Teenhacks -->
+            <article class="project-card" onclick="openModal('teenhacks')">
+                <div class="card-image">
+                    <img src="assets/THLI.png" alt="Hackathon Event" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>FirstShot @ Teenhacks</h3>
+                    <p>AI aim analysis tool for Counter-Strike 2 using computer vision.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Computer Vision</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- NYU Hackathons -->
+            <article class="project-card" onclick="openModal('nyu')">
+                <div class="card-image">
+                    <img src="assets/NYU.jpg" alt="NYU" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>SoundKey @ HackNYU</h3>
+                    <p>Secure password recall extension using music and lyrics.</p>
+                    <div class="tags">
+                        <span>Chrome Ext</span>
+                        <span>OpenAI API</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <div id="modal-body">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </div>
+
+    <section id="hardware" class="section-container">
+        <h2 class="section-title">Hardware Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="card-image">
+                    <div class="placeholder-img color-3"></div>
+                </div>
+                <div class="card-content">
+                    <h3>Smart Home Hub</h3>
+                    <p>IoT central controller using Raspberry Pi and custom sensors.</p>
+                    <div class="tags">
+                        <span>Raspberry Pi</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="card-image">
+                    <div class="placeholder-img color-1"></div>
+                </div>
+                <div class="card-content">
+                    <h3>Autonomous Rover</h3>
+                    <p>Arduino-based rover with obstacle avoidance and pathfinding.</p>
+                    <div class="tags">
+                        <span>C++</span>
+                        <span>Arduino</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate developer focused on creating intuitive and dynamic user experiences. With a strong
+                foundation in modern web technologies, I bring ideas to life with clean code and creative design.</p>
+            <div class="tech-stack">
+                <div class="tech-item">JavaScript</div>
+                <div class="tech-item">HTML5</div>
+                <div class="tech-item">CSS3</div>
+                <div class="tech-item">React</div>
+                <div class="tech-item">Node.js</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Reach Out</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/saaketh-manepalli-a8727b305/" target="_blank">LinkedIn</a>
+                <a href="mailto:saakethmanepalli@utexas.edu">Email</a>
+                <a href="https://github.com/SaakethManepalli" target="_blank">GitHub</a>
+            </div>
+            <p class="copyright">&copy; SM Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
