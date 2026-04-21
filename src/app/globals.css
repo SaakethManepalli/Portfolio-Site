@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav-height: 64px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 69, 0, 0.4);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff4500;
+  }
+
+  ::selection {
+    background: rgba(255, 69, 0, 0.3);
+    color: #f0ede8;
+  }
+}
+
+@layer components {
+  /* Blueprint corner brackets */
+  .corner-brackets {
+    position: relative;
+  }
+  .corner-brackets::before,
+  .corner-brackets::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: rgba(255, 69, 0, 0.45);
+    border-style: solid;
+    pointer-events: none;
+  }
+  .corner-brackets::before {
+    top: -1px;
+    left: -1px;
+    border-width: 1px 0 0 1px;
+  }
+  .corner-brackets::after {
+    bottom: -1px;
+    right: -1px;
+    border-width: 0 1px 1px 0;
+  }
+}
+
+@layer utilities {
+  /* Source mode — body-level toggle */
+  .source-mode * {
+    font-family: var(--font-jetbrains-mono), monospace !important;
+  }
+
+  .source-mode .visual-only {
+    display: none !important;
+  }
+
+  .source-only {
+    display: none !important;
+  }
+
+  .source-mode .source-only {
+    display: block !important;
+  }
+}
