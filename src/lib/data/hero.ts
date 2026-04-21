@@ -4,7 +4,7 @@ export const heroLayers: HeroLayer[] = [
   {
     index: 1,
     label: 'HARDWARE / ECE',
-    technologies: ['ARM Assembly', 'C', 'MSPM0', 'KiCad', 'Fields & Waves'],
+    technologies: ['ARM Assembly', 'C', 'MSPM0', 'KiCad', 'Circuit Design'],
     layer: 'hardware',
   },
   {

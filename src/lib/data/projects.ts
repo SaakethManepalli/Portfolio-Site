@@ -3,7 +3,7 @@ import type { TechProjectCardData } from '@/lib/types'
 export const projects: TechProjectCardData[] = [
   {
     projectName: 'CLOSED_LOOP_BIOMETRIC',
-    subtitle: 'MedTech — Closed Loop Biometric System',
+    subtitle: 'Closed Loop Biometric System',
     status: 'in-progress',
     spec: {
       filePath: 'closed-loop-biometric/hardware/embedded',
@@ -29,7 +29,7 @@ export const projects: TechProjectCardData[] = [
   },
   {
     projectName: 'BUDGET_APP',
-    subtitle: 'Fintech — Premium iOS Personal Finance',
+    subtitle: 'Premium iOS Personal Finance',
     status: 'active',
     spec: {
       filePath: 'budget-app/ios/production',

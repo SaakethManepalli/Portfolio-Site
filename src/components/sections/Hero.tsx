@@ -52,7 +52,7 @@ export default function Hero() {
             {/* Brief */}
             <p className="text-paper-dim leading-relaxed max-w-sm">
               I build across the full stack — from ARM assembly and embedded firmware to production
-              web apps and iOS. Currently studying Fields & Waves.
+              web apps and iOS.
             </p>
 
             {/* CTAs */}

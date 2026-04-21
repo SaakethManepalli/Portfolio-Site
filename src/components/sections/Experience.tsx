@@ -7,7 +7,7 @@ const education = [
   {
     year: '2025 – PRESENT',
     institution: 'University of Texas at Austin',
-    role: 'B.S. Electrical & Computer Engineering — Fields & Waves Focus',
+    role: 'B.S. Electrical & Computer Engineering',
     highlight: true,
   },
 ]
